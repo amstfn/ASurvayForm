@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name<input placeholder="Enter your name" id="name" type="text" required></label>
+            <label id="email-label" for="email">Email<input placeholder="Enter your Email" id="email" type="email" required></label>
+            <label id="number-label" for="number">Age(optional)<input placeholder="Age" id="number" type="number" min="13" max="120"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown" class="reSize">
+                    <option>Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="choose-definitely" ><input class="inline" id="choose-definitely" type="radio" name="prefertion"> Definitely</label>
+            <label for="choose-maybe"><input class="inline" id="choose-maybe"  type="radio" name="prefertion"> Maybe</label>
+            <label for="choose-notSure"><input class="inline" id="choose-notSure" type="radio" name="prefertion"> Not sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="2-dropdown">What is your favorite feature of freeCodeCamp?
+                <select id="2-dropdown" class="reSize">
+                    <option>Select an option</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>    
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="checkbox1"><input class="inline" id="checkbox1" name="evaluation" value="Front-end Projects" type="checkbox"> Front-end Projects</label>
+            <label for="checkbox2"><input class="inline" id="checkbox2" name="evaluation" value="Back-end Projects" type="checkbox"> Back-end Projects</label>
+            <label for="checkbox3"><input class="inline" id="checkbox3" name="evaluation" value="Data Visualization" type="checkbox"> Data Visualization</label>
+            <label for="checkbox4"><input class="inline" id="checkbox4" name="evaluation" value="Challenges" type="checkbox"> Challenges</label>
+            <label for="checkbox5"><input class="inline" id="checkbox5" name="evaluation" value="Open Source Community" type="checkbox"> Open Source Community</label>
+            <label for="checkbox6"><input class="inline" id="checkbox6" name="evaluation" value="Gitter help rooms" type="checkbox"> Gitter help rooms</label>
+            <label for="checkbox7"><input class="inline" id="checkbox7" name="evaluation" value="Videos" type="checkbox"> Videos</label>
+            <label for="checkbox8"><input class="inline" id="checkbox8" name="evaluation" value="City Meetups" type="checkbox"> City Meetups</label>
+            <label for="checkbox9"><input class="inline" id="checkbox9" name="evaluation" value="Wiki" type="checkbox"> Wiki</label>
+            <label for="checkbox10"><input class="inline" id="checkbox10" name="evaluation" value="Forum" type="checkbox"> Forum</label>
+            <label for="checkbox11"><input class="inline" id="checkbox11" name="evaluation" value="Additional Courses" type="checkbox"> Additional Courses</label>
+        </fieldset>
+        <fieldset>
+            <label>Any comments or suggestions?<textarea id="comment" name="comment" cols="60" rows="6" placeholder="Enter your comment here..."></textarea></label>
+        </fieldset>
+        <fieldset><input type="submit" class="reSize" value="Submit"></fieldset>
+    </form>
+</body>
+</html>
